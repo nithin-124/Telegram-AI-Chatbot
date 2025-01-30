@@ -1,22 +1,31 @@
-# Telegram-AI-Chatbot
-An intelligent Telegram AI Chatbot powered by Gemini AI, designed for real-time assessments and assistance. This chatbot can process text queries, analyze images/files, and perform web searches, making it a versatile AI assistant.
+# Gemini Telegram BOT
 
-Features 🌟
-✅ AI-Powered Chat – Uses Gemini AI for smart responses
-✅ User Registration & Authentication – MongoDB for storing user data
-✅ File & Image Analysis – Extracts insights from uploaded media
-✅ Web Search Integration – Fetches real-time information
-✅ Seamless Telegram Integration – Built with Python & Telegram Bot API
+## Description
+This project is a chatbot application that uses Google's Generative AI (Gemini) to generate responses. It is built with Python and uses Flask for the web server. The chatbot can be interacted with via a Telegram bot.
 
-Tech Stack 🛠️
-Python (Flask/FastAPI)
-Telegram Bot API
-Gemini AI API
-MongoDB (User data storage)
-Cloud Deployment (Render/Vercel)
 
-How to Use?
-1️⃣ Start the bot on Telegram
-2️⃣ Register/Login
-3️⃣ Ask questions or upload files for analysis
-4️⃣ Get AI-powered responses instantly
+## Installation
+1. Set up the Telegram bot using the BotFather on Telegram
+2. Deploy on vercel with just a click [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/nithin-124/Telegram-AI-Chatbot)
+
+   
+## Environment Variables
+The following environment variables are required for the application to run:
+
+   | Variable             | Description                               | Default Value |
+   |----------------------|-------------------------------------------|---------------|
+   | `GEMINI_API_KEY`     | Your Gemini API key                       | None          |
+   | `TELEGRAM_BOT_TOKEN` | Your Telegram Bot token                   | None          |
+   | `ENABLE_SECURE_WEBHOOK_TOKEN` | Enable validation of a secure token passed to the Telegram API webhook to prevent unauthorized access. Allowed values are 'True' or 'False'. | True |
+   | `TELEGRAM_WEBHOOK_SECRET` | A secure token used to validate incoming requests to the Telegram API webhook. | None
+   
+## Project Progress
+This section tracks the progress of the project. The following features are planned or have been implemented:
+
+- [x] Implement Gemini model
+- [x] Implement a basic plugin
+- [x] Implement DateTimePlugin
+- [x] Implement gemini vision api, to recognize images
+- [x] Chat history mode
+- [x] Implement other plugins (e.g. weather, stock, etc.)
+- [x] Setup Continuous Delivery
